@@ -33,9 +33,6 @@
 .index .indexMain .indexMainDiv .websiteDiv:hover{
     transform: scale(1.01);
 }
-.index .indexMain .indexMainDiv .websiteDiv:not(){
-    filter: blur(7);
-}
 
 .index .indexMain .indexMainDiv .websiteDiv .websiteNameDiv{
     display: flex;
