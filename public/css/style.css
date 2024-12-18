@@ -75,4 +75,21 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
+    animation: upDown  1.5s ease-in infinite;
+    
+}
+
+@keyframes upDown {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
