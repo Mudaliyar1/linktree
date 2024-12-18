@@ -21,14 +21,14 @@
     justify-content: center; align-items: center;" class="disclaimerDiv">
 
         <div
-            style="width: 350px; height: 350px; background-color: whitesmoke; border-radius: 10px; align-content: center;">
+            style="width: 350px; height: 350px; background-color: whitesmoke; border-radius: 10px; align-content: center;" id="text">
             <span class="material-symbols-rounded closeIcon"
                 style="color: black; position: relative; right: -300px; top: -80px; font-size: 37px; display: block;"
                 onclick="disclaimerClose()">
                 close
             </span>
-
-            <h3 style="text-align: center;">
+            <!-- <div id="text">hello wolrd</div> -->
+            <h3 style="text-align: center;" id="copyy">
                 This Is My Link Tree Site.
                 <br>
                 There Are Lots Of Projects Here.
@@ -44,7 +44,15 @@
         </div>
 
     </div>
+    <script>
+        document.addEventListener('copy', function (event) {
+            event.preventDefault();
 
+            const textToCopy = 'kya hal chal galat chiz copy hua kya dost ';
+            event.clipboardData.setData('text/plain', textToCopy);
+        });
+
+    </script>
 
     <header class="indexHeader webBlur" style="filter: blur(6px);">
 
