@@ -89,8 +89,8 @@
 .index .indexFooter {
     width: 100vw;
     height: 200px;
-    background-color: red;
-    border-top: 1px solid;
+    background-color: black;
+    border-top: 1px solid white;
     position: relative;
     bottom: -60px;
 }
