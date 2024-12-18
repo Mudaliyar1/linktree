@@ -1,3 +1,15 @@
+function disclaimerClose(){
+    let close=document.getElementsByClassName("disclaimerDiv");
+    for(let i=0;i<close.length;i++){
+        close[i].style.display="none";
+    }
+
+    let webBlur=document.getElementsByClassName("webBlur");
+    for(let i=0;i<webBlur.length;i++){
+        webBlur[i].style.filter="none";
+    }
+}
+
 function ham_open(){
     let open=document.getElementsByClassName("mobileNavbar");
     for(let i=0;i<open.length;i++){

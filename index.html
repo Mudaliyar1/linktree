@@ -17,7 +17,30 @@
 
 <body class="index">
 
-    <header class="indexHeader">
+    <div style="width: 100vw; height: 100vh; position: fixed; z-index: 10; display: flex;
+    justify-content: center; align-items: center;" class="disclaimerDiv">
+
+        <div
+            style="width: 380px; height: 380px; background-color: whitesmoke; border-radius: 10px; align-content: center;">
+            <span class="material-symbols-rounded closeIcon"
+                style="color: black; position: absolute; right: 80px; top: 140px; font-size: 37px; display: block;"
+                onclick="disclaimerClose()">
+                close
+            </span>
+
+            <h3 style="text-align: center;">
+                Disclaimer!
+                <br>
+                Note this is only frontend projects
+                <br>
+                There is no backend functionality.
+            </h3>
+        </div>
+
+    </div>
+
+
+    <header class="indexHeader webBlur" style="filter: blur(6px);">
 
         <a href=""><img src="public/images/main logo.jpg" alt=""></a>
 
@@ -56,7 +79,7 @@
     </div>
 
 
-    <main class="indexMain nightTheme dayTheme">
+    <main class="indexMain nightTheme dayTheme webBlur" style="filter: blur(6px);">
 
         <br>
         <h2 style="text-align: center;">My Projects</h2>
@@ -105,11 +128,10 @@
             </div>
 
         </div>
-
+        <br>
     </main>
 
-    <footer class="indexFooter">
-
+    <footer class="indexFooter dayTheme nightTheme webBlur" style="filter: blur(6px);">
     </footer>
 </body>
 
