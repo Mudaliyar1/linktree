@@ -28,7 +28,7 @@
     height: 50px;
     border-radius: 50%;
     position: absolute;
-    left: 4px;
+    left: 20px;
     top: 5px;
 }
 
@@ -37,7 +37,7 @@
     color: white;
 }
 
-.index .indexHeader .pcNavbar{
+.index .indexHeader .pcNavbar {
     display: flex;
     position: absolute;
     gap: 50px;
@@ -45,13 +45,13 @@
 }
 
 @media (max-width:600px) {
-   .index .pcLinks {
+    .index .pcLinks {
         display: none;
     }
 }
 
 
-.index .hamburgerIcon{
+.index .hamburgerIcon {
     position: absolute;
     right: 10px;
 }
@@ -63,7 +63,7 @@
 }
 
 
-.index .mobileNavbar{
+.index .mobileNavbar {
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -72,7 +72,7 @@
     z-index: 4;
 }
 
-.index .mobileLinks{
+.index .mobileLinks {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,10 +86,11 @@
 }
 
 
-
-
-
-
-
-
-
+.index .indexFooter {
+    width: 100vw;
+    height: 200px;
+    background-color: red;
+    border-top: 1px solid;
+    position: relative;
+    bottom: -60px;
+}
