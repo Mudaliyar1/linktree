@@ -53,6 +53,17 @@
     align-content: center;
     border-radius: 50%;
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    animation: rotatee  10s ease-in-out infinite alternate;
+}
+
+
+@keyframes rotatee{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .index .indexMain .indexMainDiv .websiteDiv .websiteNameDiv .websiteLinkBtn {
