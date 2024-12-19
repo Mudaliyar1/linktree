@@ -103,3 +103,35 @@
 
 /* About page css code starts from here */
 
+.about .aboutMain{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 60px;
+}
+
+
+.about .aboutMain .aboutContainer .myPhoto{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.about .aboutMain .aboutContainer .myPhoto img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about .aboutMain .aboutContainer .aboutMe{
+    position: relative;
+    top: 40px;
+    margin-left: 10px;
+    max-width: 95%;
+}
+
+.about .indexFooter{
+    /* position: relative; */
+    /* bottom: -200px; */
+}
