@@ -140,9 +140,11 @@
 /* contact page css code starts from here */
 
 
+
+
 .contact .contactMain .contactContainer{
     width: 100vw;
-    height: auto;
+    height: 100vh;
     position: relative;
     top: 60px;
 }
