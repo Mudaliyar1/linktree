@@ -131,7 +131,38 @@
     max-width: 95%;
 }
 
-.about .indexFooter{
-    /* position: relative; */
-    /* bottom: -200px; */
+/* about page css code ends here */
+
+
+
+
+
+/* contact page css code starts from here */
+
+
+.contact .contactMain .contactContainer{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 60px;
+}
+
+.contact .contactMain .contactContainer .contactForm{
+    display: flex;
+    justify-content: center;
+}
+
+.contact .contactMain .contactContainer .contactForm form .submitBtn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 8px;
+    background-color: red;
+    color: black;
+}
+
+.contact .contactMain .contactContainer .contactForm form input{
+    border: none;
+    border-bottom: 1px solid;
 }
