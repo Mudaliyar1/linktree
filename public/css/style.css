@@ -147,11 +147,24 @@
     height: 100vh;
     position: relative;
     top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact .contactMain .contactContainer .contactForm{
     display: flex;
     justify-content: center;
+    width: 340px;
+    height: 600px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.contact .contactMain .contactContainer .contactForm form{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .contact .contactMain .contactContainer .contactForm form .submitBtn{
