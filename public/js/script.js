@@ -34,7 +34,7 @@ function ham_open(){   // this function is for open hamburger menu
 
 
     gsap.from('.mobileLinks a',{        //gsap animations code
-        y:10,
+        y:-10,
         duration:0.2,
         stagger:1,
         opacity:0,
