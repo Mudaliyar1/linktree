@@ -210,7 +210,7 @@ gsap.to('.animationText #animationText1',{
     y:-300,
     // opacity:0,
     // duration:1,
-    color:'green',
+    // color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText1",
         scroller:'body',
@@ -223,7 +223,7 @@ gsap.to('.animationText #animationText2',{
     x:-1000,
     // opacity:0,
     // duration:1,
-    color:'green',
+    // color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText2",
         scroller:'body',
@@ -236,7 +236,7 @@ gsap.to('.animationText #animationText3',{
     y:-300,
     // opacity:0,
     // duration:1,
-    color:'green',
+    // color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText3",
         scroller:'body',
@@ -249,7 +249,7 @@ gsap.to('.animationText #animationText4',{
     x:1600,
     // opacity:0,
     // duration:1,
-    color:'green',
+    // color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText4",
         scroller:'body',
@@ -264,7 +264,7 @@ gsap.to('.animationText #animationText5',{
     // opacity:0,
     // duration:1,
     rotateY:'360deg',
-    color:'green',
+    // color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText5",
         scroller:'body',
@@ -280,7 +280,7 @@ gsap.to('.animationText #animationText6',{
     // duration:1,
     fontSize:'38px',
     rotateY:'360deg',
-    color:'green',
+    // color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText6",
         scroller:'body',
@@ -295,7 +295,7 @@ gsap.to('.animationText #animationText7',{
     // opacity:0,
     // duration:1,
     rotateY:'360deg',
-    color:'green',
+    // color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText7",
         scroller:'body',
