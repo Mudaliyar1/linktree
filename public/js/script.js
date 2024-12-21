@@ -22,12 +22,11 @@ function ham_open(){   // this function is for open hamburger menu
         scrollDeactive[i].style.overflowY="hidden";
     }
 
-
-    gsap.from('.mobileLinks a',{
+    gsap.from('.mobileLinks a',{        //gsap animations code
         y:10,
         duration:0.3,
         stagger:1,
-        opacity:0
+        opacity:0,
     });
 }
 
