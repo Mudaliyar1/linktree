@@ -146,7 +146,7 @@ function lightMode(){ // this function is for activating light mode
 // });
 
 gsap.from('.indexMainDiv #box2',{
-    x:'-500%',
+    x:'-400%',
     duration:1,
     scrollTrigger:{
         trigger:".indexMainDiv #box2",
