@@ -16,9 +16,6 @@ function ham_open(){   // this function is for open hamburger menu
     //     open[i].style.display="block";
     // }
 
-
-
-    
     let scrollDeactive=document.getElementsByClassName("index");  // this code deactivate the scroll of webpage when hamburger menu open
     for(let i=0;i<scrollDeactive.length;i++){
         scrollDeactive[i].style.overflowY="hidden";
@@ -31,7 +28,6 @@ function ham_open(){   // this function is for open hamburger menu
             gsap.set('.mobileNavbar',{display:"block"})
         },
     })
-
 
     gsap.from('.mobileLinks a',{        //gsap animations code
         y:-10,
@@ -127,3 +123,52 @@ function lightMode(){ // this function is for activating light mode
     }
 }
 
+
+
+
+
+
+
+// gsap code starts from here
+
+gsap.from('.indexMainDiv #box1',{
+    // scale:0,
+    x:'70%',
+    duration:1,
+    // delay:1,
+    scrollTrigger:{
+        trigger:".indexMainDiv #box1",
+        scroller:'body',
+        // markers:true,
+        // start:"top 1%"
+    }
+
+});
+
+gsap.from('.indexMainDiv #box2',{
+    // scale:0,
+    x:'-70%',
+    // rotateX:'120deg',
+    duration:1,
+    // delay:1,
+    scrollTrigger:{
+        trigger:".indexMainDiv #box2",
+        scroller:'body',
+        // markers:true,
+        // start:"top 10%"
+    }
+
+});
+// gsap.from('.indexMainDiv #box3',{
+//     // scale:1,
+//     x:800,
+//     duration:1,
+//     // delay:1,
+//     scrollTrigger:{
+//         trigger:".indexMainDiv #box3",
+//         scroller:'main',
+//         markers:true,
+//         start:"top 35%"
+//     }
+
+// });
