@@ -11,10 +11,12 @@ function disclaimerClose(){    //this code is for disclaimer in home page
 }
 
 function ham_open(){   // this function is for open hamburger menu 
-    let open=document.getElementsByClassName("mobileNavbar");
-    for(let i=0;i<open.length;i++){
-        open[i].style.display="block";
-    }
+    // let open=document.getElementsByClassName("mobileNavbar");
+    // for(let i=0;i<open.length;i++){
+    //     open[i].style.display="block";
+    // }
+
+
 
     
     let scrollDeactive=document.getElementsByClassName("index");  // this code deactivate the scroll of webpage when hamburger menu open
@@ -22,19 +24,47 @@ function ham_open(){   // this function is for open hamburger menu
         scrollDeactive[i].style.overflowY="hidden";
     }
 
+    gsap.to('.mobileNavbar',{
+        duration:0,
+        delay:0,
+        onComplete:()=>{
+            gsap.set('.mobileNavbar',{display:"block"})
+        },
+    })
+
+
     gsap.from('.mobileLinks a',{        //gsap animations code
         y:10,
-        duration:0.3,
+        duration:0.2,
         stagger:1,
         opacity:0,
+       
     });
 }
 
 function ham_close(){ // this function is for closing hamburger menu
-    let close=document.getElementsByClassName("mobileNavbar");
-    for(let i=0;i<close.length;i++){
-        close[i].style.display="none";
-    }
+    // let close=document.getElementsByClassName("mobileNavbar");
+    // for(let i=0;i<close.length;i++){
+    //     close[i].style.display="none";
+    // }
+
+    gsap.to('.mobileLinks a',{
+        y:10,
+        duration:0.2,
+        stagger:1,
+        opacity:0,
+        onComplete:()=>{
+            gsap.set('.mobileLinks a',{opacity:1})
+        }
+    });
+
+    gsap.to('.mobileNavbar',{
+        duration:0,
+        delay:2.1,
+        onComplete:()=>{
+            gsap.set('.mobileNavbar',{display:'none'})
+        },
+    })
 
     let scrollActive=document.getElementsByClassName("index"); // this code activate the scroll of webpage when hamburger menu close
     for(let i=0;i<scrollActive.length;i++){
