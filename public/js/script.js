@@ -204,6 +204,8 @@ gsap.from('.indexMainDiv #box6',{
 });
 
 
+
+
 gsap.to('.animationText #animationText1',{
     y:-300,
     // opacity:0,
@@ -212,21 +214,8 @@ gsap.to('.animationText #animationText1',{
     scrollTrigger:{
         trigger:".animationText #animationText1",
         scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
-        scrub:2
-    }
-});
-gsap.to('.animationText #animationText1',{
-    y:-300,
-    // opacity:0,
-    // duration:1,
-    color:'green',
-    scrollTrigger:{
-        trigger:".animationText #animationText1",
-        scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
+        start:'top 10%',
+        end:'top 10%',
         scrub:2
     }
 });
@@ -238,8 +227,8 @@ gsap.to('.animationText #animationText2',{
     scrollTrigger:{
         trigger:".animationText #animationText2",
         scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
+        start:'top 10%',
+        end:'top 10%',
         scrub:2
     }
 });
@@ -251,8 +240,8 @@ gsap.to('.animationText #animationText3',{
     scrollTrigger:{
         trigger:".animationText #animationText3",
         scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
+        start:'top 10%',
+        end:'top 10%',
         scrub:2
     }
 });
@@ -264,8 +253,8 @@ gsap.to('.animationText #animationText4',{
     scrollTrigger:{
         trigger:".animationText #animationText4",
         scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
+        start:'top 10%',
+        end:'top 10%',
         scrub:2
     }
 });
@@ -279,8 +268,8 @@ gsap.to('.animationText #animationText5',{
     scrollTrigger:{
         trigger:".animationText #animationText5",
         scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
+        start:'top 10%',
+        end:'top 10%',
         scrub:3
     }
 });
@@ -295,8 +284,8 @@ gsap.to('.animationText #animationText6',{
     scrollTrigger:{
         trigger:".animationText #animationText6",
         scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
+        start:'top 10%',
+        end:'top 10%',
         scrub:3
     }
 });
@@ -310,8 +299,8 @@ gsap.to('.animationText #animationText7',{
     scrollTrigger:{
         trigger:".animationText #animationText7",
         scroller:'body',
-        start:'top 30%',
-        end:'top 30%',
+        start:'top 10%',
+        end:'top 10%',
         scrub:3
     }
 });
