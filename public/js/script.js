@@ -146,55 +146,57 @@ function lightMode(){ // this function is for activating light mode
 // });
 
 gsap.from('.indexMainDiv #box2',{
-    x:'110%',
+    // x:'10%',
+    scale:0,
     duration:1,
     scrollTrigger:{
         trigger:".indexMainDiv #box2",
         scroller:'body',
         // markers:true,
-        start:"top 60%",
+        start:"top 80%",
         end:'top 10%',
-        scrub:true
+        scrub:1
     }
 
 
 });
-gsap.from('.indexMainDiv #box3',{
-    x:'-110%',
-    duration:1,
-    scrollTrigger:{
-        trigger:".indexMainDiv #box3",
-        scroller:'body',
-        // markers:true,
-        start:"top 80%",
-        end:'top 40%',
-        scrub:true
-    }
 
-});
-gsap.from('.indexMainDiv #box4',{
-    x:'110%',
-    duration:1,
-    scrollTrigger:{
-        trigger:".indexMainDiv #box4",
-        scroller:'body',
-        // markers:true,
-        start:"top 80%",
-        end:'top 40%',
-        scrub:true
-    }
+// gsap.from('.indexMainDiv #box3',{
+//     x:'-110%',
+//     duration:1,
+//     scrollTrigger:{
+//         trigger:".indexMainDiv #box3",
+//         scroller:'body',
+//         // markers:true,
+//         start:"top 80%",
+//         end:'top 40%',
+//         scrub:true
+//     }
 
-});
-gsap.from('.indexMainDiv #box5',{
-    x:'-110%',
-    duration:1,
-    scrollTrigger:{
-        trigger:".indexMainDiv #box6",
-        scroller:'body',
-        // markers:true,
-        start:"top 120%",
-        end:'top 60%',
-        scrub:true
-    }
+// });
+// gsap.from('.indexMainDiv #box4',{
+//     x:'110%',
+//     duration:1,
+//     scrollTrigger:{
+//         trigger:".indexMainDiv #box4",
+//         scroller:'body',
+//         // markers:true,
+//         start:"top 80%",
+//         end:'top 40%',
+//         scrub:true
+//     }
 
-});
+// });
+// gsap.from('.indexMainDiv #box5',{
+//     x:'-110%',
+//     duration:1,
+//     scrollTrigger:{
+//         trigger:".indexMainDiv #box6",
+//         scroller:'body',
+//         // markers:true,
+//         start:"top 120%",
+//         end:'top 60%',
+//         scrub:true
+//     }
+
+// });
