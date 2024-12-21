@@ -189,17 +189,17 @@ gsap.from('.indexMainDiv #box5',{
     }
 });
 gsap.from('.indexMainDiv #box6',{
-    x:'10%',
+    x:'400%',
     duration:1,
-    rotateX:'360deg',
+    // rotateY:'360deg',
     // borderRadius:'50%',
     scrollTrigger:{
         trigger:".indexMainDiv #box6",
         scroller:'body',
         // markers:true,
-        start:"top 90%",
-        end:'top 20%',
-        scrub:1
+        start:"top 190%",
+        end:'top 60%',
+        scrub:3
     }
 });
 
