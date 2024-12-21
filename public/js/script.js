@@ -131,19 +131,7 @@ function lightMode(){ // this function is for activating light mode
 
 // gsap code starts from here
 
-// gsap.from('.indexMainDiv #box1',{
-//     x:'-110%',
-//     duration:1,
-//     scrollTrigger:{
-//         trigger:".indexMainDiv #box1",
-//         scroller:'body',
-//         // markers:true,
-//         start:"top px",
-//         end:'top 2%',
-//         scrub:2
-//     }
 
-// });
 
 gsap.from('.indexMainDiv #box2',{
     x:'-500%',
@@ -157,11 +145,9 @@ gsap.from('.indexMainDiv #box2',{
         end:'top 20%',
         scrub:1
     }
-
-
 });
 gsap.from('.indexMainDiv #box3',{
-    x:'-100%',
+    x:'100%',
     rotateY:'360deg',
     duration:1,
     scrollTrigger:{
@@ -174,7 +160,7 @@ gsap.from('.indexMainDiv #box3',{
     }
 });
 gsap.from('.indexMainDiv #box4',{
-    x:'100%',
+    x:'300%',
     duration:1,
     rotateX:'200deg',
     scrollTrigger:{
@@ -193,6 +179,20 @@ gsap.from('.indexMainDiv #box5',{
     borderRadius:'50%',
     scrollTrigger:{
         trigger:".indexMainDiv #box5",
+        scroller:'body',
+        // markers:true,
+        start:"top 90%",
+        end:'top 20%',
+        scrub:1
+    }
+});
+gsap.from('.indexMainDiv #box6',{
+    x:'0%',
+    duration:1,
+    rotateY:'360deg',
+    // borderRadius:'50%',
+    scrollTrigger:{
+        trigger:".indexMainDiv #box6",
         scroller:'body',
         // markers:true,
         start:"top 90%",
