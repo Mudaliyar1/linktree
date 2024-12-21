@@ -131,44 +131,70 @@ function lightMode(){ // this function is for activating light mode
 
 // gsap code starts from here
 
-gsap.from('.indexMainDiv #box1',{
-    // scale:0,
-    x:'70%',
-    duration:1,
-    // delay:1,
-    scrollTrigger:{
-        trigger:".indexMainDiv #box1",
-        scroller:'body',
-        // markers:true,
-        // start:"top 1%"
-    }
+// gsap.from('.indexMainDiv #box1',{
+//     x:'-110%',
+//     duration:1,
+//     scrollTrigger:{
+//         trigger:".indexMainDiv #box1",
+//         scroller:'body',
+//         // markers:true,
+//         start:"top px",
+//         end:'top 2%',
+//         scrub:2
+//     }
 
-});
+// });
 
 gsap.from('.indexMainDiv #box2',{
-    // scale:0,
-    x:'-70%',
-    // rotateX:'120deg',
+    x:'110%',
     duration:1,
-    // delay:1,
     scrollTrigger:{
         trigger:".indexMainDiv #box2",
         scroller:'body',
         // markers:true,
-        // start:"top 10%"
+        start:"top 60%",
+        end:'top 10%',
+        scrub:true
+    }
+
+
+});
+gsap.from('.indexMainDiv #box3',{
+    x:'-110%',
+    duration:1,
+    scrollTrigger:{
+        trigger:".indexMainDiv #box3",
+        scroller:'body',
+        // markers:true,
+        start:"top 80%",
+        end:'top 40%',
+        scrub:true
     }
 
 });
-// gsap.from('.indexMainDiv #box3',{
-//     // scale:1,
-//     x:800,
-//     duration:1,
-//     // delay:1,
-//     scrollTrigger:{
-//         trigger:".indexMainDiv #box3",
-//         scroller:'main',
-//         markers:true,
-//         start:"top 35%"
-//     }
+gsap.from('.indexMainDiv #box4',{
+    x:'110%',
+    duration:1,
+    scrollTrigger:{
+        trigger:".indexMainDiv #box4",
+        scroller:'body',
+        // markers:true,
+        start:"top 80%",
+        end:'top 40%',
+        scrub:true
+    }
 
-// });
+});
+gsap.from('.indexMainDiv #box5',{
+    x:'-110%',
+    duration:1,
+    scrollTrigger:{
+        trigger:".indexMainDiv #box6",
+        scroller:'body',
+        // markers:true,
+        start:"top 120%",
+        end:'top 60%',
+        scrub:true
+    }
+
+});
