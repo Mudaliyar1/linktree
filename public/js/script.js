@@ -146,57 +146,30 @@ function lightMode(){ // this function is for activating light mode
 // });
 
 gsap.from('.indexMainDiv #box2',{
-    // x:'10%',
-    scale:0,
+    x:'-230%',
     duration:1,
     scrollTrigger:{
         trigger:".indexMainDiv #box2",
         scroller:'body',
         // markers:true,
-        start:"top 80%",
-        end:'top 10%',
+        start:"top 90%",
+        end:'top 20%',
         scrub:1
     }
 
 
 });
+gsap.from('.indexMainDiv #box3',{
+    x:'-230%',
+    duration:1,
+    scrollTrigger:{
+        trigger:".indexMainDiv #box3",
+        scroller:'body',
+        // markers:true,
+        start:"top 90%",
+        end:'top 20%',
+        scrub:1
+    }
 
-// gsap.from('.indexMainDiv #box3',{
-//     x:'-110%',
-//     duration:1,
-//     scrollTrigger:{
-//         trigger:".indexMainDiv #box3",
-//         scroller:'body',
-//         // markers:true,
-//         start:"top 80%",
-//         end:'top 40%',
-//         scrub:true
-//     }
 
-// });
-// gsap.from('.indexMainDiv #box4',{
-//     x:'110%',
-//     duration:1,
-//     scrollTrigger:{
-//         trigger:".indexMainDiv #box4",
-//         scroller:'body',
-//         // markers:true,
-//         start:"top 80%",
-//         end:'top 40%',
-//         scrub:true
-//     }
-
-// });
-// gsap.from('.indexMainDiv #box5',{
-//     x:'-110%',
-//     duration:1,
-//     scrollTrigger:{
-//         trigger:".indexMainDiv #box6",
-//         scroller:'body',
-//         // markers:true,
-//         start:"top 120%",
-//         end:'top 60%',
-//         scrub:true
-//     }
-
-// });
+});
