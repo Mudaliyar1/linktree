@@ -150,7 +150,7 @@ gsap.from('.indexMainDiv #box2',{
     duration:1,
     scrollTrigger:{
         trigger:".indexMainDiv #box2",
-        scroller:'body',
+        scroller:'.index',
         // markers:true,
         start:"top 90%",
         end:'top 20%',
