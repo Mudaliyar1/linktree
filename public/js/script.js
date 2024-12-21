@@ -214,47 +214,47 @@ gsap.to('.animationText #animationText1',{
     scrollTrigger:{
         trigger:".animationText #animationText1",
         scroller:'body',
-        start:'top 10%',
-        end:'top 10%',
+        start:'top 40%',
+        end:'top 40%',
         scrub:2
     }
 });
 gsap.to('.animationText #animationText2',{
-    x:-300,
+    x:-1000,
     // opacity:0,
     // duration:1,
     color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText2",
         scroller:'body',
-        start:'top 10%',
-        end:'top 10%',
+        start:'top 40%',
+        end:'top 40%',
         scrub:2
     }
 });
 gsap.to('.animationText #animationText3',{
-    y:2000,
+    y:-300,
     // opacity:0,
     // duration:1,
     color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText3",
         scroller:'body',
-        start:'top 10%',
-        end:'top 10%',
+        start:'top 40%',
+        end:'top 40%',
         scrub:2
     }
 });
 gsap.to('.animationText #animationText4',{
-    x:1200,
+    x:1600,
     // opacity:0,
     // duration:1,
     color:'green',
     scrollTrigger:{
         trigger:".animationText #animationText4",
         scroller:'body',
-        start:'top 10%',
-        end:'top 10%',
+        start:'top 40%',
+        end:'top 40%',
         scrub:2
     }
 });
@@ -268,14 +268,14 @@ gsap.to('.animationText #animationText5',{
     scrollTrigger:{
         trigger:".animationText #animationText5",
         scroller:'body',
-        start:'top 10%',
-        end:'top 10%',
+        start:'top 40%',
+        end:'top 40%',
         scrub:3
     }
 });
 
 gsap.to('.animationText #animationText6',{
-    y:2000,
+    x:-900,
     // opacity:0,
     // duration:1,
     fontSize:'38px',
@@ -284,14 +284,14 @@ gsap.to('.animationText #animationText6',{
     scrollTrigger:{
         trigger:".animationText #animationText6",
         scroller:'body',
-        start:'top 10%',
-        end:'top 10%',
+        start:'top 40%',
+        end:'top 40%',
         scrub:3
     }
 });
 
 gsap.to('.animationText #animationText7',{
-    x:300,
+    x:900,
     // opacity:0,
     // duration:1,
     rotateY:'360deg',
@@ -299,8 +299,8 @@ gsap.to('.animationText #animationText7',{
     scrollTrigger:{
         trigger:".animationText #animationText7",
         scroller:'body',
-        start:'top 10%',
-        end:'top 10%',
+        start:'top 40%',
+        end:'top 40%',
         scrub:3
     }
 });
