@@ -21,6 +21,14 @@ function ham_open(){   // this function is for open hamburger menu
     for(let i=0;i<scrollDeactive.length;i++){
         scrollDeactive[i].style.overflowY="hidden";
     }
+
+
+    gsap.from('.mobileLinks a',{
+        y:10,
+        duration:0.3,
+        stagger:1,
+        opacity:0
+    });
 }
 
 function ham_close(){ // this function is for closing hamburger menu
@@ -89,5 +97,4 @@ function lightMode(){ // this function is for activating light mode
         backToIcon[i].style.backgroundColor="white";
     }
 }
-
 
