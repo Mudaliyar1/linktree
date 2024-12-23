@@ -558,10 +558,10 @@ tl.to('.disclaimerAnimation .h4',{
 tl.to('.disclaimerAnimation',{
     // scale:0,
     y:"-100%",
-    // rotate:"360deg",
-    // rotateY:"-190deg",
+    // rotate:"30deg",
+    // rotateY:"190deg",
     // rotateX:"-150deg",
-    duration:0.69,
+    duration:0.79,
 })
 
 document.body.style.overflowY="hidden";
