@@ -21,6 +21,13 @@ function ham_open(){   // this function is for open hamburger menu
         scrollDeactive[i].style.overflowY="hidden";
     }
 
+    
+    gsap.from('.mobileLinks a',{        //gsap animations code
+        x:-20,
+        duration:0.2,
+        stagger:0.3,
+        opacity:0,
+    });
 
     gsap.to('.mobileNavbar',{
         duration:0,
@@ -30,13 +37,6 @@ function ham_open(){   // this function is for open hamburger menu
         },
     })
 
-    gsap.from('.mobileLinks a',{        //gsap animations code
-        x:-20,
-        duration:0.2,
-        stagger:0.3,
-        opacity:0,
-
-    });
 }
 
 function ham_close(){ // this function is for closing hamburger menu
