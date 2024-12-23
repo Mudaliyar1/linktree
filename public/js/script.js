@@ -165,7 +165,7 @@ gsap.from('.indexMainDiv #box2', {
     rotate:'360deg',
     rotateY:'-360deg',
     rotateX:'-70deg',
-    color:'green',
+    color:'green',    
     // borderRadius: '1000%',
     scrollTrigger: {
         trigger: ".indexMainDiv #box2",
@@ -183,6 +183,7 @@ gsap.from('.indexMainDiv #box3', {
     rotateY: '-190deg',
     rotateX: '250deg',
     duration: 1,
+
     scrollTrigger: {
         trigger: ".indexMainDiv #box3",
         scroller: 'body',
@@ -337,3 +338,237 @@ gsap.to('.animationText #animationText7', {
     }
 });
 
+var cd=gsap.timeline();
+
+cd.from(".count1",{
+    opacity:0,
+    x:"-200%",
+    stagger:0.15
+})
+cd.to(".count1",{
+    opacity:0,
+    x:"200%",
+    stagger:0.2
+})
+cd.from(".count2",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count2",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count3",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count3",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count4",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count4",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count5",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count5",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count6",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count6",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count7",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count7",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count8",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.to(".count8",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.from(".count9",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count9",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count10",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count10",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count11",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count11",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count12",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count12",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count13",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count13",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count14",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count14",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+cd.from(".count15",{
+    opacity:0,
+    x:"-200%",
+    stagger:1
+})
+cd.to(".count15",{
+    opacity:0,
+    x:"200%",
+    stagger:1
+})
+
+var tl=gsap.timeline();
+tl.from('.disclaimerAnimation .h1',{
+    opacity:0,
+    // x:-200,
+    stagger:0.3,
+    rotateX:"100deg",
+    rotateY:"0deg",
+})
+tl.to('.disclaimerAnimation .h1',{
+    opacity:0,
+    y:200,
+    stagger:0.15,
+    scale:3,
+    fontSize:"2rem",
+    color:"red"
+})
+
+tl.from('.disclaimerAnimation .h2',{
+    opacity:0,
+    y:-200,
+    stagger:0.20,
+    scale:2,
+    rotateX:"-290deg",
+    rotateY:"-190deg"
+})
+
+tl.to('.disclaimerAnimation .h2',{
+    opacity:0,
+    y:200,
+    scale:3,
+    stagger:0.20,
+    rotateX:"-290deg",
+    rotateY:"-190deg",
+    // fontSize:"3rem",
+    color:"green"
+})
+tl.from('.disclaimerAnimation .h3',{
+    opacity:0,
+    y:200,
+    stagger:0.23,
+    rotateX:"190deg",
+    rotateY:"-190deg"
+})
+tl.to('.disclaimerAnimation .h3',{
+    opacity:0,
+    y:-200,
+    stagger:0.15,
+    rotate:"360deg"
+})
+tl.from('.disclaimerAnimation .h4',{
+    opacity:0,
+    x:200,
+    stagger:0.3,
+    rotateX:"-360deg",
+    rotateY:"360deg"
+})
+tl.to('.disclaimerAnimation .h4',{
+    opacity:0,
+    y:200,
+    stagger:0.17,
+    rotateX:"-360deg",
+})
+
+
+tl.to('.disclaimerAnimation',{
+    // scale:0,
+    y:"-100%",
+    // rotate:"360deg",
+    // rotateY:"-190deg",
+    // rotateX:"-150deg",
+    duration:0.69,
+})
+
+document.body.style.overflowY="hidden";
+
+tl.to("body", {
+    onComplete: () => {
+      // Enable scrolling after animation
+      document.body.style.overflowY= "scroll";
+    }
+  });
