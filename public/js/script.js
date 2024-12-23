@@ -159,22 +159,29 @@ function lightMode() { // this function is for activating light mode
 
 
 gsap.from('.indexMainDiv #box2', {
-    x: '-700%',
+    // x: '-700%',
     duration: 1,
-    borderRadius: '1000%',
+    scale:4,
+    rotate:'360deg',
+    rotateY:'-360deg',
+    rotateX:'-70deg',
+    color:'green',
+    // borderRadius: '1000%',
     scrollTrigger: {
         trigger: ".indexMainDiv #box2",
         scroller: '.index',
         // markers:true,
         start: "top 90%",
         end: 'top 20%',
-        scrub: 1
+        scrub: 2
     }
 });
 gsap.from('.indexMainDiv #box3', {
-    x: '300%',
-    rotateY: '200deg',
-    rotateX: '360deg',
+    x: '-0%',
+    y:-0,
+    scale:2,
+    rotateY: '-190deg',
+    rotateX: '250deg',
     duration: 1,
     scrollTrigger: {
         trigger: ".indexMainDiv #box3",
@@ -330,41 +337,3 @@ gsap.to('.animationText #animationText7', {
     }
 });
 
-gsap.to('.netflix',{
-    y:260,
-    opacity:1,
-    scrollTrigger:{
-        trigger:".netflix",
-        scroller: 'body',
-        // markers:true,
-        start: 'top 60%',
-        end: 'top 40%',
-        scrub:2
-    }
-})
-gsap.to('.grocery',{
-    y:260,
-    opacity:1,
-    scrollTrigger:{
-        trigger:".netflix",
-        scroller: 'body',
-        // markers:true,
-        start: 'top 50%',
-        end: 'bottom 10%',
-        scrub:2
-    }
-})
-gsap.to('.bacbot',{
-    y:260,
-    opacity:1,
-    rotateX:'-10deg',
-    rotateY: '360deg',
-    scrollTrigger:{
-        trigger:".netflix",
-        scroller: 'body',
-        // markers:true,
-        start: 'top -30%',
-        end: 'top 40%',
-        scrub:4
-    }
-})
