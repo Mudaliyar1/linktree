@@ -330,3 +330,41 @@ gsap.to('.animationText #animationText7', {
     }
 });
 
+gsap.to('.netflix',{
+    y:260,
+    opacity:1,
+    scrollTrigger:{
+        trigger:".netflix",
+        scroller: 'body',
+        // markers:true,
+        start: 'top 60%',
+        end: 'top 40%',
+        scrub:2
+    }
+})
+gsap.to('.grocery',{
+    y:260,
+    opacity:1,
+    scrollTrigger:{
+        trigger:".netflix",
+        scroller: 'body',
+        // markers:true,
+        start: 'top 50%',
+        end: 'bottom 10%',
+        scrub:2
+    }
+})
+gsap.to('.bacbot',{
+    y:260,
+    opacity:1,
+    rotateX:'-10deg',
+    rotateY: '360deg',
+    scrollTrigger:{
+        trigger:".netflix",
+        scroller: 'body',
+        // markers:true,
+        start: 'top -30%',
+        end: 'top 40%',
+        scrub:4
+    }
+})
