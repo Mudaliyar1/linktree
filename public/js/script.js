@@ -158,6 +158,7 @@ function lightMode() { // this function is for activating light mode
 // })
 
 
+
 gsap.from('.indexMainDiv #box2', {
     // x: '-700%',
     duration: 1,
@@ -166,20 +167,19 @@ gsap.from('.indexMainDiv #box2', {
     rotateY:'-360deg',
     rotateX:'-70deg',
     color:'green',    
-    // borderRadius: '1000%',
     scrollTrigger: {
         trigger: ".indexMainDiv #box2",
         scroller: '.index',
         // markers:true,
-        start: "top 90%",
-        end: 'top 20%',
+        start: "top 30%",
+        end: 'top 10%',
         scrub: 2
     }
 });
 gsap.from('.indexMainDiv #box3', {
     x: '-0%',
     y:-0,
-    scale:2,
+    scale:1,
     rotateY: '-190deg',
     rotateX: '250deg',
     duration: 1,
@@ -188,157 +188,169 @@ gsap.from('.indexMainDiv #box3', {
         trigger: ".indexMainDiv #box3",
         scroller: 'body',
         // markers:true,
-        start: "top 80%",
+        start: "top 40%",
         end: 'top 20%',
         scrub: 2
     }
 });
 gsap.from('.indexMainDiv #box4', {
-    x: '-300%',
+    x: '200%',
+    // x: '200%',
+    y: '-200%',
     duration: 1,
-    rotateX: '200deg',
+    // opacity:,
+    rotateY:"360deg",
+    rotateX: '-150deg',
     scrollTrigger: {
         trigger: ".indexMainDiv #box4",
         scroller: 'body',
         // markers:true,
-        start: "top 90%",
-        end: 'top 20%',
-        scrub: 1
+        start: "top 0%",
+        end: 'top 0%',
+        scrub: 5
     }
 });
 gsap.from('.indexMainDiv #box5', {
-    x: '100%',
+    x: '220%',
+    // y: '-300%',
     duration: 1,
-    rotate: '360deg',
+    rotateY: '200deg',
     rotateX: '360deg',
-    borderRadius: '50%',
     scrollTrigger: {
         trigger: ".indexMainDiv #box5",
         scroller: 'body',
         // markers:true,
-        start: "top 90%",
+        start: "top 60%",
         end: 'top 20%',
         scrub: 1
     }
 });
 gsap.from('.indexMainDiv #box6', {
-    x: '400%',
+    x: '-400%',
     duration: 1,
+    rotateX:"231deg",
+    rotateY:"-231deg",
     // rotateY:'360deg',
     // borderRadius:'50%',
     scrollTrigger: {
         trigger: ".indexMainDiv #box6",
         scroller: 'body',
         // markers:true,
-        start: "top 190%",
+        start: "top 70%",
         end: 'top 60%',
-        scrub: 3
+        scrub: 5
     }
 });
 
 
 
+function MainpageScrollTextMessage(){
+    gsap.to('.animationText #animationText1', {
+        y: -300,
+        // opacity:0,
+        // duration:1,
+        // color:'green',
+        scrollTrigger: {
+            trigger: ".animationText #animationText1",
+            scroller: 'body',
+            start: 'top 40%',
+            end: 'top 40%',
+            scrub: 2
+        }
+    });
+    gsap.to('.animationText #animationText2', {
+        x: -1000,
+        // opacity:0,
+        // duration:1,
+        // color:'green',
+        scrollTrigger: {
+            trigger: ".animationText #animationText2",
+            scroller: 'body',
+            start: 'top 40%',
+            end: 'top 40%',
+            scrub: 2
+        }
+    });
+    gsap.to('.animationText #animationText3', {
+        y: -300,
+        // opacity:0,
+        // duration:1,
+        // color:'green',
+        scrollTrigger: {
+            trigger: ".animationText #animationText3",
+            scroller: 'body',
+            start: 'top 40%',
+            end: 'top 40%',
+            scrub: 2
+        }
+    });
+    gsap.to('.animationText #animationText4', {
+        x: 1600,
+        // opacity:0,
+        // duration:1,
+        // color:'green',
+        scrollTrigger: {
+            trigger: ".animationText #animationText4",
+            scroller: 'body',
+            start: 'top 40%',
+            end: 'top 40%',
+            scrub: 2
+        }
+    });
+    
+    gsap.to('.animationText #animationText5', {
+        y: -300,
+        // opacity:0,
+        // duration:1,
+        rotateY: '360deg',
+        // color:'green',
+        scrollTrigger: {
+            trigger: ".animationText #animationText5",
+            scroller: 'body',
+            start: 'top 40%',
+            end: 'top 40%',
+            scrub: 3
+        }
+    });
+    
+    gsap.to('.animationText #animationText6', {
+        x: -900,
+        // opacity:0,
+        // duration:1,
+        fontSize: '38px',
+        rotateY: '360deg',
+        // color:'green',
+        scrollTrigger: {
+            trigger: ".animationText #animationText6",
+            scroller: 'body',
+            start: 'top 40%',
+            end: 'top 40%',
+            scrub: 3
+        }
+    });
+    
+    gsap.to('.animationText #animationText7', {
+        x: 900,
+        // opacity:0,
+        // duration:1,
+        rotateY: '360deg',
+        // color:'green',
+        scrollTrigger: {
+            trigger: ".animationText #animationText7",
+            scroller: 'body',
+            start: 'top 40%',
+            end: 'top 40%',
+            scrub: 3
+        }
+    });
+    
+}
 
-gsap.to('.animationText #animationText1', {
-    y: -300,
-    // opacity:0,
-    // duration:1,
-    // color:'green',
-    scrollTrigger: {
-        trigger: ".animationText #animationText1",
-        scroller: 'body',
-        start: 'top 40%',
-        end: 'top 40%',
-        scrub: 2
-    }
-});
-gsap.to('.animationText #animationText2', {
-    x: -1000,
-    // opacity:0,
-    // duration:1,
-    // color:'green',
-    scrollTrigger: {
-        trigger: ".animationText #animationText2",
-        scroller: 'body',
-        start: 'top 40%',
-        end: 'top 40%',
-        scrub: 2
-    }
-});
-gsap.to('.animationText #animationText3', {
-    y: -300,
-    // opacity:0,
-    // duration:1,
-    // color:'green',
-    scrollTrigger: {
-        trigger: ".animationText #animationText3",
-        scroller: 'body',
-        start: 'top 40%',
-        end: 'top 40%',
-        scrub: 2
-    }
-});
-gsap.to('.animationText #animationText4', {
-    x: 1600,
-    // opacity:0,
-    // duration:1,
-    // color:'green',
-    scrollTrigger: {
-        trigger: ".animationText #animationText4",
-        scroller: 'body',
-        start: 'top 40%',
-        end: 'top 40%',
-        scrub: 2
-    }
-});
+MainpageScrollTextMessage();
 
-gsap.to('.animationText #animationText5', {
-    y: -300,
-    // opacity:0,
-    // duration:1,
-    rotateY: '360deg',
-    // color:'green',
-    scrollTrigger: {
-        trigger: ".animationText #animationText5",
-        scroller: 'body',
-        start: 'top 40%',
-        end: 'top 40%',
-        scrub: 3
-    }
-});
 
-gsap.to('.animationText #animationText6', {
-    x: -900,
-    // opacity:0,
-    // duration:1,
-    fontSize: '38px',
-    rotateY: '360deg',
-    // color:'green',
-    scrollTrigger: {
-        trigger: ".animationText #animationText6",
-        scroller: 'body',
-        start: 'top 40%',
-        end: 'top 40%',
-        scrub: 3
-    }
-});
-
-gsap.to('.animationText #animationText7', {
-    x: 900,
-    // opacity:0,
-    // duration:1,
-    rotateY: '360deg',
-    // color:'green',
-    scrollTrigger: {
-        trigger: ".animationText #animationText7",
-        scroller: 'body',
-        start: 'top 40%',
-        end: 'top 40%',
-        scrub: 3
-    }
-});
-
-var cd=gsap.timeline();
+function mainPageAnimation(){
+    var cd=gsap.timeline();
 
 cd.from(".count1",{
     opacity:0,
@@ -572,3 +584,7 @@ tl.to("body", {
       document.body.style.overflowY= "scroll";
     }
   });
+
+}
+
+mainPageAnimation();
